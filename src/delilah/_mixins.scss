@@ -105,3 +105,14 @@
   font-size: $size;
   line-height: $size * 1.1;
 }
+
+
+//generate a 10 color palette based on a single color 
+
+@function palette-generator($palette, $base-col) {
+  @for $i from 1 through 10 {
+    $palette: append($palette, lighten($base-col, 5%*$i));
+  }
+  @return $palette;
+}
+
