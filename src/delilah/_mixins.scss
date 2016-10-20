@@ -111,7 +111,7 @@
 
 @function palette-generator($palette, $base-col) {
   @for $i from 1 through 10 {
-    $palette: append($palette, lighten($base-col, 5%*$i));
+    $palette: append($palette, lighten($base-col, 5% * $i));
   }
   @return $palette;
 }
