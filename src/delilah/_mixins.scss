@@ -90,15 +90,15 @@
 @mixin heading($h) {
   $size: $default-size;
   
-  @if ($h == h1) {
+  @if ($h == 'h1') {
     $size: $default-size * 4;
   }
 
-  @if ($h == h2) {
+  @if ($h == 'h2') {
     $size: $default-size * 3;
   }
 
-  @if ($h == h3) {
+  @if ($h == 'h3') {
     $size: $default-size * 2.2;
   }
 
